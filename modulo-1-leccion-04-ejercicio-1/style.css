@@ -1,0 +1,35 @@
+* {
+  font-family: "roboto", sans-serif;
+  color: indianred;
+}
+
+.container {
+  background-color: #dddddd;
+}
+
+.item {
+  padding-top: 1px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* flex */
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item {
+  box-sizing: border-box;
+  width: 60px;
+  height: 100%;
+  background: peachpuff;
+  border: 1px solid indianred;
+}

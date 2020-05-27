@@ -1,0 +1,46 @@
+* {
+  font-family: "roboto", sans-serif;
+  color: #666666;
+}
+
+.container {
+  background-color: #dddddd;
+}
+
+.item {
+  padding-top: 25px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 36px;
+}
+
+/* flex */
+
+.container {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 5px solid indianred;
+}
+
+.item-1 {
+  flex-grow: 3;
+}
+
+.item-2 {
+  flex-grow: 1;
+  order: 2;
+}
+
+.item-3 {
+  flex-grow: 1;
+}

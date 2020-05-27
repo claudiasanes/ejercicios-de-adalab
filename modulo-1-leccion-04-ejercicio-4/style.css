@@ -1,0 +1,39 @@
+* {
+  font-family: "roboto", sans-serif;
+  color: #000000;
+}
+
+.item {
+  text-align: left;
+  font-size: 12px;
+  border: 1px solid purple;
+}
+
+/* flex */
+
+.container {
+  display: flex;
+  background-color: #ffffff;
+  width: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  box-sizing: border-box;
+  padding: 16px;
+  width: 50%;
+}
+
+.box {
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  background-color: plum;
+}
+
+.item-5 {
+  width: 100%;
+  order: -1;
+}

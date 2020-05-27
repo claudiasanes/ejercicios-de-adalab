@@ -1,0 +1,21 @@
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+div {
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+}

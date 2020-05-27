@@ -1,0 +1,37 @@
+* {
+  font-family: "roboto", sans-serif;
+  color: purple;
+}
+
+.container {
+  background-color: #dddddd;
+  height: 100px;
+  background-color: pink;
+}
+
+.item {
+  padding-top: 1px;
+  text-align: center;
+  font-size: 32px;
+  list-style-type: none;
+}
+
+/* flex */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.item {
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.item a:hover {
+  background: palevioletred;
+}

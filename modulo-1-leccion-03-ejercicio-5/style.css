@@ -1,0 +1,10 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: url(https://www.placecage.com/200/300) center no-repeat;
+    padding: 10px;
+    border: 5px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
