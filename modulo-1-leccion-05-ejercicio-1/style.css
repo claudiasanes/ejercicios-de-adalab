@@ -1,0 +1,14 @@
+/*.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.item {
+  margin: 6px;
+} */
+
+.item {
+  display: inline;
+  margin: 6px;
+}

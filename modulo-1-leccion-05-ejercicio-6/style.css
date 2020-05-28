@@ -1,0 +1,19 @@
+.cookies {
+  height: 100px;
+  width: 100%;
+  bottom: 0px;
+  background-color: yellow;
+  position: fixed;
+}
+
+.longtext {
+  box-sizing: border-box;
+  margin: 40px;
+}
+
+.text-cookies {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}

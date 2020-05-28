@@ -1,6 +1,7 @@
 * {
   font-family: "roboto", sans-serif;
   color: #000000;
+  box-sizing: border-box;
 }
 
 .item {
@@ -20,20 +21,18 @@
 }
 
 .item {
-  box-sizing: border-box;
   padding: 16px;
   width: 50%;
 }
 
 .box {
-  box-sizing: border-box;
   height: 100px;
   width: 100%;
   object-fit: cover;
   background-color: plum;
 }
 
-.item-5 {
+.item:last-of-type {
   width: 100%;
   order: -1;
 }

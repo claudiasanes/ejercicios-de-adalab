@@ -1,0 +1,32 @@
+/* parte a y b */
+/*
+.header {
+  position: fixed;
+  top: 0px;
+  height: 100px;
+  width: 100%;
+  background-color: cornflowerblue;
+  z-index: 1;
+}
+
+.main {
+  position: relative;
+  z-index: 99;
+}
+*/
+
+/* parte c */
+
+.header {
+  position: fixed;
+  top: 0px;
+  height: 100px;
+  width: 100%;
+  background-color: cornflowerblue;
+  z-index: 990;
+}
+
+.main {
+  position: relative;
+  top: 120px;
+}
