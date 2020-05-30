@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 480px) {
+  .bg {
+    background-color: red;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .bg {
+    background-color: yellow;
+  }
+}
+
+@media all and (min-width: 760px) {
+  .bg {
+    background-color: green;
+  }
+}

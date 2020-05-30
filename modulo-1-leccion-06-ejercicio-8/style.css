@@ -1,0 +1,55 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0x;
+}
+
+header,
+h1,
+h2,
+h3 {
+  padding-bottom: 16px;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.nav {
+  background-color: greenyellow;
+}
+
+.article {
+  background-color: yellow;
+}
+
+.aside {
+  background-color: grey;
+  margin: 16px 0;
+}
+
+.orange-box {
+  background-color: orange;
+}
+
+@media all and (max-width: 480px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 1000px) {
+  .nav {
+    float: left;
+  }
+
+.article {
+  float: right;
+}
+
+.aside {
+  float: right;
+}
+
+@media all and (min-width: 1000px) {
+}

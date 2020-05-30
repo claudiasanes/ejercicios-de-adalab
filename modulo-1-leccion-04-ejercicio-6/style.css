@@ -1,0 +1,46 @@
+* {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  max-width: 960px;
+}
+
+.header {
+  background: tomato;
+  width: 100%;
+  order: 0;
+}
+
+.footer {
+  background: lightgreen;
+  width: 100%;
+  order: 4;
+}
+
+.article {
+  text-align: left;
+  background: deepskyblue;
+  width: 50%;
+  order: 2;
+}
+
+.aside-1 {
+  background: gold;
+  width: 25%;
+  order: 1;
+}
+
+.aside-2 {
+  background: hotpink;
+  width: 25%;
+  order: 3;
+}

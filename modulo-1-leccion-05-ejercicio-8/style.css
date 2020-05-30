@@ -1,18 +1,19 @@
-.text {
-  display: inline;
-  position: relative;
-  left: 0px;
+html {
+  font-size: 16px;
 }
-
-.pdf p {
-  display: inline-block;
-  background-color: red;
-  width: 40px;
+.smiley {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
-  padding: 8px;
-  position: relative;
-  right: 100%;
-  max-width: 1200px;
-
-  top: 0px;
+  font-family: "courier new";
+  font-weight: bold;
+  font-size: 50px;
+  color: #424242;
+  background: #ffcc00;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
