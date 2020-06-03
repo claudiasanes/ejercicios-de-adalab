@@ -1,0 +1,102 @@
+/* una vez he metido el archivo reset, he linkado el html y los css y he metido la tipo que me piden de Google Fonts en el html y he hecho el esqueleto básico, lo primero que hacemos en el main.css es resetear los estilos */
+* {
+  box-sizing: border-box;
+  color: inherit; /* que herede el color del padre */
+}
+
+/* lo segundo definir las variables */
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --regular-weight: 300;
+  --bold-weight: 700;
+  --primary-color: #cc212a;
+  --light-color: white;
+  --dark-color: black;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: var(--regular-weight);
+}
+
+/* le meto al texto un margin 0 para que no me haga cosas raras */
+h1 {
+  margin: 0px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; /* si pongo auto, dejo que se centre automáticamente por la izquiera y la derecha en casi de que la pantalla sea más grande de 1200 como una pantalla de Mac enorme, quedará todo centrado y no se irá cada elemento a una punta (columna central) */
+  padding: 15px; /* así ya me toca los extremos*/
+}
+
+/* MAIN */
+
+.main {
+  height: 100vh; /* vh y vw es relativo a la ventana, se refiere a lo que va a ocupar con respectoa la ventana, si ponemos 100% será todo el espacio del contenedor */
+  display: flex; /* la forma más fácil para centrar esto */
+  flex-direction: column;
+  align-items: center; /* spans colocados en el centro de la pantalla */
+  justify-content: center;
+}
+
+.main-tittle {
+  color: var(--primary-color);
+  font-weight: var(--bold-weight);
+  text-transform: capitalize; /* apara que la primera letra de cada palabra vaya en mayúsculas, por si me piden en algún momento que vayan en minúscilas solo tenga que cambier esto */
+}
+
+.main-tittle span {
+  display: block; /* para que se me ponga una línea de span debado de la otra */
+  text-align: center; /* texto justificado al centro de su span*/
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  bottom: 0px; /* si no especifico dónde tiene que estar el fixed no aparecerá, estará pero no lo veremos, ahora estará en el pixel 0 de mi ventana */
+  width: 100%;
+  border-top: 2px solid var(--primary-color); /* así creo una línea encima del footer */
+  text-align: center; /* nos sirve para alinear en el centro elementos de línea (inline), como un span. Si trabajo con bloques hay que hacerlo o con position o con flex por ejemplo */
+}
+
+.footer-logo {
+  background-color: var(--primary-color);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: var(--light-color);
+  font-weight: bold;
+  text-align: center; /* esto se refiere solo a la R que va dentro del círculo */
+  line-height: 60px; /* si le digo que el alto de linea ocupe lo mismo que el alto del círculo entonces se me colocará en el centro */
+  position: absolute; /* quiero desplazar el logo con respecto a todo el documento, va a tomar como referencia la primera posición que no sea static (que es la que viene por defecto) en este caso su referencia será el .footer. Con absolute puedo hacer posicionamientos bestias, ponerlo donde me de la gana. */
+  top: 0px;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* también podría poner -30px -30px ya que el círculo mide 60 píxeles, funcionaría exáctamente igual */
+}
+
+.footer .wrapper {
+  padding-top: 40px; /*para dejar espacio entre el copyright y el logo */
+}
+
+@media all and (min-width: 768px) {
+  .footer-logo {
+    position: static; /* pra todo aquello que no sea mobile que recupere su posición por defecto, que es static */
+    transform: none; /* me ha quitado las transformación que tenía en mobile */
+  }
+
+  .footer .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; /* para que quede cada uno a un lado en el eje principal */
+    align-items: center; /* centrados en el eje cruzado, en este caso es la columna (eje vertical) porque mi principal es la línea (row-reverse) */
+    padding-top: 15px; /* que es lo mismo que le he dicho arriba del todo que tenga todo el contenido para que todos los elementos tengan el mismo padding */
+  }
+}
+
+/* si hiciera ahora mediaqueris para pantalla laptop partiría de los atributos que he dado para tablet, que ya me ha pisado lo de mobile */
