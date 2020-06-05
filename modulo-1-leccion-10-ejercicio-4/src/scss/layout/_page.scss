@@ -1,0 +1,18 @@
+.section-1 {
+  background-color: rosybrown;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 div {
+  background-color: red;
+  height: 45px;
+  width: 120px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+  display: inline-block;
+}
