@@ -1,0 +1,49 @@
+.footer {
+  background: $color-dark;
+  color: $color-light;
+}
+
+.wrapper {
+  padding: 16px;
+  margin: auto;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.first-container h3 {
+  padding: 16px 0px;
+}
+
+.social-network {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0px;
+}
+
+.social-network.item {
+  padding: 10px;
+}
+
+.menu-secondary ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-secondary a {
+  color: $color-light;
+  font-family: $font-main;
+  font-weight: 300;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.secondary-container span {
+  display: block;
+  padding: 24px;
+  text-align: center;
+}

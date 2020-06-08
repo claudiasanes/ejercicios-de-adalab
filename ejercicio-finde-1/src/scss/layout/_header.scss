@@ -1,0 +1,23 @@
+.header {
+  background-color: $color-primary;
+  width: 100%;
+}
+.header .wrapper {
+  padding: 16px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-items {
+  display: inline-block;
+}
+
+.menu-items a {
+  color: $color-light;
+  font-family: $font-main;
+  padding: 10px;
+  text-transform: capitalize;
+}

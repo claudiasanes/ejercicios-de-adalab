@@ -1,0 +1,24 @@
+@import "core/reset";
+@import "core/variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: $font-main;
+}
+
+ul {
+  padding: 0px;
+}
+
+@import "components/links";
+@import "layout/header";
+@import "layout/page";
+@import "layout/footer";
+@import "pages/index";
