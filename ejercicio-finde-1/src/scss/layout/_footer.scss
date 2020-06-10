@@ -14,8 +14,18 @@
   justify-content: flex-start;
 }
 
+.footer-menu {
+  text-align: left;
+  border: 1px solid red;
+}
+
 .first-container h3 {
   padding: 16px 0px;
+  text-transform: capitalize;
+}
+
+.footer-menu li {
+  display: block;
 }
 
 .social-network {
@@ -28,13 +38,13 @@
   padding: 10px;
 }
 
-.menu-secondary ul {
+.menu-terciary ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.menu-secondary a {
+.menu-terciary a {
   color: $color-light;
   font-family: $font-main;
   font-weight: 300;
@@ -46,4 +56,10 @@
   display: block;
   padding: 24px;
   text-align: center;
+}
+
+@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 1200px) {
 }

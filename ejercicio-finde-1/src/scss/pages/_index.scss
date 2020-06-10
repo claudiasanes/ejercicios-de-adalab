@@ -1,0 +1,60 @@
+/* MAIN */
+.main .wrapper {
+  padding: 48px;
+  margin: auto;
+}
+
+.options {
+  text-align: center;
+}
+
+.options p {
+  padding-bottom: 16px;
+}
+
+.options h2 {
+  padding-bottom: 16px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.article {
+  border: 1px solid transparentize($color-dark, 0.9);
+  border-radius: 5px;
+  margin: 24px;
+  padding: 24px;
+  max-width: 320px;
+}
+
+.article img {
+  padding: 16px;
+}
+
+.article h3 {
+  font-weight: 700;
+  padding-bottom: 16px;
+  text-transform: capitalize;
+}
+
+.details {
+  padding: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+@media all and (min-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    text-align: center;
+  }
+}

@@ -17,8 +17,13 @@ ul {
   padding: 0px;
 }
 
+.wrapper {
+  max-width: 1280px;
+}
+
 @import "components/links";
 @import "layout/header";
-@import "layout/page";
+@import "layout/hero";
+@import "pages/index";
 @import "layout/footer";
 @import "pages/index";

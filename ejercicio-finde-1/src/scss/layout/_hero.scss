@@ -1,0 +1,30 @@
+/* HERO */
+
+.hero__background {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/slider-home.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 16px;
+  background-color: $color-primary;
+  background-size: cover;
+  display: block;
+}
+
+.line {
+  color: $color-secondary;
+}
+
+.hero__background .text {
+  color: $color-light;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

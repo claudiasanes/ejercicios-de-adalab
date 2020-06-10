@@ -1,6 +1,8 @@
 .header {
   background-color: $color-primary;
   width: 100%;
+  position: fixed;
+  top: 0px;
 }
 .header .wrapper {
   padding: 16px;
@@ -9,6 +11,18 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.header .mobile-button {
+  display: block;
+  background-image: url(../images/menu-icon.png);
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.header .menu {
+  display: none;
 }
 
 .menu-items {
@@ -20,4 +34,20 @@
   font-family: $font-main;
   padding: 10px;
   text-transform: capitalize;
+}
+
+@media all and (min-width: 768px) {
+  .header .mobile-button {
+    display: none;
+  }
+  .header .menu {
+    display: block;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .header .wrapper {
+    padding-bottom: 24px;
+    align-items: flex-end;
+  }
 }
