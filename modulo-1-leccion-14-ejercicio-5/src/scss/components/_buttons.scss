@@ -1,0 +1,56 @@
+.btn {
+  display: inline-block;
+  margin: 16px;
+  padding: 8px 12px;
+  width: 120px;
+  text-align: center;
+  color: $color-light;
+  background-color: $color-primary;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: darken($color-primary, 10%);
+    opacity: 1;
+  }
+}
+
+.valid {
+  background-color: $color-success;
+  &:hover {
+    background-color: darken($color-success, 10%);
+    opacity: 1;
+  }
+}
+
+.invalid {
+  background-color: $color-alert;
+  &:hover {
+    background-color: darken($color-alert, 10%);
+    opacity: 1;
+  }
+}
+
+.disabled {
+  background-color: $color-disabled;
+  &:hover {
+    background-color: darken($color-disabled, 10%);
+    opacity: 1;
+  }
+}
+
+.btn-round {
+  border-radius: 50px;
+}
+
+.btn-small {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
