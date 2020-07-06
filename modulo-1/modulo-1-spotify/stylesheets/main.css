@@ -1,0 +1,287 @@
+/* .header,
+.main,
+.footer {
+  border: 1px solid red;
+} */ /*esto lo comento porque ya no lo necesito, es una ayuda visual para ver que está todo bien colocado */
+
+* /* este es el selector universal que afecta a todo el html */ {
+  box-sizing: border-box; /* casi todas las páginas lo van a neceitar para aegurarme que no se toca el antoche de la página */
+  color: inherit; /* para quitar el color de los enlaces */
+  list-style-type: none; /* Esto sirve para que no aparezca los bullet points en los menús */
+  text-decoration: none; /* Quita los subrayados de partida */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face /* para incrustar una tipo desde css, no se usa cuando es una tipo de Google Fonts */ {
+  font-family: Circular;
+  src: url(https://sp-bootstrap.global.ssl.fastly.net/8.12.1/font/circular-black.woff2)
+      format("woff2"),
+    url(https://sp-bootstrap.global.ssl.fastly.net/8.12.1/font/circular-black.woff)
+      format("woff2");
+  font-weight: 900px;
+  font-style: normal;
+}
+
+:root /* es un pseudo selector que hace referencia al html */ {
+  /*COLORS*/
+  --primary-color: black;
+  --secondary-color: #4bb84a;
+  --light-color: white;
+  --terciary-color: #0691ff;
+  /*FONTS*/
+  --primary-font: Circular, Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-family: var(--primary-font);
+  font-size: 16px;
+}
+
+.wrapper /* Así se le suele llamar a la columna central, establece un tamaño máximo, meteré este selector en todo los elementos que se puedan ver afectados por tener distintos tamaños de pantalla */ {
+  max-width: 1200px;
+  margin: auto; /* que el mavegador se encargue de centrarlo sin necesidad de yo especificarle dónde colocarlo*/
+  width: 100%;
+  padding: 15px;
+}
+
+/*HEADER*/
+
+.header {
+  background-color: var(--primary-color);
+}
+
+.header .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: inline-block;
+  width: 115px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-mobile-buttom {
+  display: block;
+  background-image: url("../images/menu-icon.png");
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.header-menu {
+  list-style-type: none;
+  padding: 0px;
+  color: var(--light-color);
+  display: none;
+}
+
+.header-menu li {
+  display: inline-block;
+}
+
+.header-menu li a {
+  padding: 15px;
+  font-weight: bold;
+  /* transición */
+  -webkit-transition: color 1s ease;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.header-menu li:nth-child(3):after {
+  content: "|";
+}
+
+/* HERO */
+
+.hero {
+  background-color: var(--terciary-color);
+  color: var(--light-color);
+}
+
+.hero .wrapper {
+  height: 50vh;
+}
+
+.tittle {
+  font-size: 3rem;
+}
+
+.tittle span {
+  display: block; /* para que los span me ocupen todo el bloque y por lo tanto un span quede por debajo del otro */
+}
+
+.button {
+  background-color: var(--secondary-color);
+  display: inline-block; /* para poderle dar padding y margin */
+  padding: 16px;
+  border-radius: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-width: 200px;
+  letter-spacing: 2px; /* para separar los caracteres */
+  /* transición */
+  -webkit-transition: background-color 1s linear;
+  -webkit-transition: background-color 1s linear;
+  -moz-transition: background-color 1s linear;
+  -ms-transition: background-color 1s linear;
+  -o-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+}
+
+/* OPTIONS */
+
+.options {
+  text-align: center;
+}
+
+.secondary-tittle {
+  font-size: 2rem;
+}
+
+.options-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.option-image {
+  flex-shrink: 0; /* para que el contendor no se haga más pequeño en el flex, así las imágenes ocuparán todas lo mismo */
+}
+
+.option-image img {
+  width: 100%;
+  max-width: 180px;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding-top: 20px;
+}
+
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /*tres columnas donde el espacio disponible e divide por igual entre las 3*/
+}
+
+.footer .wrapper nav {
+  grid-column: span 2; /*le estoy diiendo que me ocupe 2 de los 3 espacios que hay de las columnas */
+  padding-top: 15px;
+}
+
+.footer-menu li {
+  display: inline;
+}
+
+.footer-menu li a {
+  padding: 5px;
+}
+
+.footer-menu li:last-child {
+  display: block;
+  width: 100%;
+}
+
+.copy span {
+  display: block; /* para que se me ponga uno debajo del otro */
+  text-align: right;
+}
+
+/* TABLET */
+@media all and (min-width: 768px) {
+  .header-menu {
+    display: block;
+  }
+
+  .header-mobile-buttom {
+    display: none;
+  }
+
+  .hero .wrapper {
+    background-image: url("../images/premium_dancer.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    /* también podemos poner todo junto con background: url("../images/premium_dancer.png") no-repeat right top; */
+    background-size: 50%;
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+
+  @keyframes intro {
+    from {
+      background-size: 60%;
+    }
+    to {
+      background-size: 50%;
+    }
+  }
+
+  .options-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .option {
+    width: 50%;
+  }
+
+  .option-text {
+    text-align: left;
+  }
+
+  .footer-menu li:last-child {
+    display: inline;
+    width: auto;
+  }
+}
+
+/* para cuando esté en vertical la pantalla */
+@media all and (min-width: 768px) and (orientation: portrait) {
+  .hero .wrapper {
+    background-position: right bottom;
+  }
+}
+
+/* PC */
+@media all and (min-width: 1200px) {
+  .options-items {
+    text-align: center;
+  }
+  .option {
+    width: 25%; /* son 4 elementos por lo tanto quiero me que ocupe cada uno el 25% para que en total hagan el 100% */
+    flex-direction: column;
+  }
+}

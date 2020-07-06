@@ -1,0 +1,21 @@
+:root {
+  --var-color-button: royalblue;
+}
+
+.button {
+  height: 45px;
+  width: 130px;
+  background-color: var(--var-color-button);
+  text-align: center;
+  line-height: 45px;
+  margin: 30px;
+  border-radius: 50px;
+}
+
+a {
+  color: honeydew;
+}
+
+.opacity {
+  opacity: 0.6;
+}

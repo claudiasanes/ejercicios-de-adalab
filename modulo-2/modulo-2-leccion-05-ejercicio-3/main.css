@@ -1,0 +1,7 @@
+.hidden {
+  display: none;
+}
+
+body {
+  max-width: 600px;
+}

@@ -22,7 +22,7 @@
 
 .item {
   padding: 16px;
-  width: 50%;
+  width: 33%;
 }
 
 .box {
@@ -35,4 +35,8 @@
 .item:last-of-type {
   width: 100%;
   order: -1;
+}
+
+.item-4 {
+  width: 100%;
 }
