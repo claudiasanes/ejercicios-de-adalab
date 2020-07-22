@@ -1,0 +1,13 @@
+li {
+  border: 1px solid grey;
+  list-style-type: none;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.favorite {
+  background-color: grey;
+}
